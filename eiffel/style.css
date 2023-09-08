@@ -21,7 +21,7 @@ text-align: center;
 #page
 
 {
-
+border: double 10px white;
 max-width:800px;
 
 margin: 20px auto;
