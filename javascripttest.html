@@ -5,10 +5,23 @@
     
 
     <body>
+        <form>
+            
+        </form>
         <p id="box">Hello</p>
-        <button type="button" onclick= "document.getElementById('box').innerHTML = 'Goodbye'"; >
-            Click me
+        <button type="button" onclick= "myFunction('Goodbye') ">
+            Clck Me
         </button>
+        <button type="button" onclick= "myFunction('Goodbye 2') ">
+            Clck Me 2
+        </button>
+    <script>
+        function myFunction(word) 
+        {
+            document.getElementById('box').innerHTML = word;
+            alert("The button got pressed");
+        }
+    </script>
         
     </body>
 </html>
