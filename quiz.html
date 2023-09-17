@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+	<title></title>
+	<style>
+		body {font-family: arial, "sans-serif";}
+	</style>
+</head>
+<body>
+
+<h1>Welcome to the Quiz</h1>
+
+<p>Enter ur answer then press the button.</p>
+ 
+<form name="question">
+ <ol>
+    <p id="box">Question  - How many bones in the Human Body?</p> 
+    Answer: <input type="text" name="answer">
+	<button type="button" onclick="validate()">Enter</button>
+	<p id="box2">Question  - What is the name of the worlds largest island?</p> 
+    Answer: <input type="text" name="answer2">
+	<button type="button" onclick="validate2()">Enter</button>
+    <p id="box3">Question  - How many holes are on a golf course?</p> 
+    <label for="golf">Choose:</label>
+    <select name="golf" id="golf">
+        <option value="19">19</option>
+        <option value="18">18</option>
+        <option value="17">17</option>
+        <option value="12">12</option>
+    </select>
+    <input type="submit" value="Submit" onclick="validate3()">
+    <p id="box4">Question  - How many continents are there?</p> 
+    Answer: <input type="text" name="answer3">
+	<button type="button" onclick="validate4()">Enter</button>
+    <p id="box5">Question  - Which country is in europe?</p> <br>
+    <input type="radio" id="css" name="europe" value="Denmark">
+        <label for="css">Denmark</label><br>
+    <input type="radio" id="css" name="europe" value="USA">
+        <label for="css">USA</label><br>
+    <input type="radio" id="javascript" name="europe" value="Kenya">
+        <label for="Kenya">Kenya</label><br>
+    <input type="submit" value="Submit" onclick="validate5()">
+ </ol>
+</form>
+
+<script>
+	
+	function validate() {
+    	var x = document.forms["question"]["answer"].value;
+    	if (x != "206") {
+        	document.getElementById("box").style.color="red"; 
+	  	}
+		else if (x == "206")
+		{
+	   		alert("Correct!");	
+		}
+
+	}
+    function validate2() {
+    	var x = document.forms["question"]["answer2"].value;
+    	if (x != "greenland") {
+        	document.getElementById("box2").style.color="red"; 
+	  	}
+		else if (x == "greenland")
+		{
+	   		alert("Correct!");	
+		}
+
+	}
+    function validate3() {
+    	var x = document.forms["question"]["golf"].value;
+    	if (x != "12") {
+        	document.getElementById("box3").style.color="red"; 
+	  	}
+		else 
+		{
+	   		alert("Correct!");	
+		}
+
+	}
+    function validate4() {
+    	var x = document.forms["question"]["answer3"].value;
+    	if (x != "7") {
+        	document.getElementById("box4").style.color="red"; 
+	  	}
+		else if (x == "7")
+		{
+	   		alert("Correct!");	
+		}
+
+	}
+    function validate5() {
+    	var x = document.forms["question"]["css"].value;
+    	if (x != "Denmark") {
+        	document.getElementById("box5").style.color="red"; 
+	  	}
+		else 
+		{
+	   		alert("Correct!");	
+		}
+
+	}
+</script>
+</body>
+</html>
