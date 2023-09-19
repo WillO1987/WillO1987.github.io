@@ -45,6 +45,7 @@
 </form>
 
 <script>
+    var count = count;
 	
 	function validate() {
     	var x = document.forms["question"]["answer"].value;
@@ -54,6 +55,7 @@
 		else if (x == "206")
 		{
 	   		alert("Correct!");	
+            count = count + 1;
 		}
 
 	}
@@ -65,6 +67,7 @@
 		else if (x == "greenland")
 		{
 	   		alert("Correct!");	
+            count = count + 1;
 		}
 
 	}
@@ -76,6 +79,7 @@
 		else 
 		{
 	   		alert("Correct!");	
+            count = count + 1;
 		}
 
 	}
@@ -87,6 +91,7 @@
 		else if (x == "7")
 		{
 	   		alert("Correct!");	
+            count = count + 1;
 		}
 
 	}
@@ -98,6 +103,8 @@
 		else 
 		{
 	   		alert("Correct!");	
+            count = count + 1;
+            alert("Ur score is " + count);
 		}
 
 	}
